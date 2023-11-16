@@ -27,7 +27,7 @@ Pytorch before 1.9.0 may not work in the future.
 **For Training Datasets:**
 - MS1MV2 (87k IDs, 5.8M images)
 - [MS-Celeb-1M ](https://www.microsoft.com/en-us/research/project/ms-celeb-1m-challenge-recognizing-one-million-celebrities-real-world/) (100k IDs, 10M images)
-- VGG2 (9K IDs, 3.31M images)
+- Glint360K (360K IDs, 18M images)
 
 **For Validation Datasets:** 
 - LFW (5749 IDs, 13,233 images, 6k Pairs)
