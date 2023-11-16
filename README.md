@@ -12,7 +12,7 @@
  noise and clean samples, but also the distribution of the current 
  class centre at different training stages. 
  
-<img src="illustration/loss_work_flow.png" width="60%" height="60%"/>
+<img src="illustration/loss_work_flow.png" width="70%" height="70%"/>
 
 ## Requirements
 
