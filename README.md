@@ -1,7 +1,7 @@
-# AdaNH-Face: Adaptive Mining of Noise and Hard Samples for Robust Face Recognitions
+# RobustFace: Adaptive Mining of Noise and Hard Samples for Robust Face Recognitions
 
 ## Introduction
- we propose an updated deep face recognition model: AdaNH-Face, and, 
+ we propose an updated deep face recognition model: RobustFace, and, 
  in comparison with the existing models, it has the feature that 
  training is proceeded with an adaptive noise and hard sample mining 
  loss function, which is designed to improve the robustness of deep 
@@ -22,7 +22,7 @@ Pytorch before 1.9.0 may not work in the future.
 - `pip install -r requirement.txt`.
 
 ## Download Datasets or Prepare Datasets
-[InsightFace](https://github.com/deepinsight/insightface/tree/master/recognition/_datasets_) provides a range of preprocessed labeled face datasets, including the MS1MV2, VGG2 etc. dataset used in AdaNH-Face.
+[InsightFace](https://github.com/deepinsight/insightface/tree/master/recognition/_datasets_) provides a range of preprocessed labeled face datasets, including the MS1MV2, VGG2 etc. dataset used in RobustFace.
 
 **For Training Datasets:**
 - MS1MV2 (87k IDs, 5.8M images)
@@ -41,7 +41,7 @@ Pytorch before 1.9.0 may not work in the future.
 
 **For Synthetic Noise Datasets:** 
 
-To provide a comprehensive evaluation on the proposed AdaNH-Face, we follow the work reported in [1] to apply two types of synthetic noise datasets, `close-set noise` and `open-set noise`, to the training
+To provide a comprehensive evaluation on the proposed RobustFace, we follow the work reported in [1] to apply two types of synthetic noise datasets, `close-set noise` and `open-set noise`, to the training
 of the assessed models. While the close-set noise is introduced by randomly changing the labels of the facial images inside the training dataset, the open-set noise  is introduced by changing the label of those facial 
 images that are not included inside the training dataset. For close-set noises, the labels of MS1MV2 samples are randomly flipped, and for open-set noises, `VGG2` is selected as the source, and `MS1MV2` samples are randomly 
 replaced. 
