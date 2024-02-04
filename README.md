@@ -65,16 +65,33 @@ The full experimental results will be presented after publication of the paper.
 ## Additional remarks
 In addition to the baseline mentioned in the paper, we conducted more extensive experiments and included comparisons with other methods, such as Sub-center ArcFace (ECCV 2020). We will continue to update the experimental results.
 
-| Method(%)               | Train Data  | LFW   | CALFW | AgeDB | CFP-FP | CPLFW | AVG   | IJBB  | IJBC  |
-|-------------------------|-------------|-------|-------|-------|--------|-------|-------|-------|-------|
-| Sub-center ArcFace,R50  | MS-Celeb-1M | 99.32 | 97.77 | 96.39 | 95.51  | 93.37 | 96.47 | 91.27 | 93.90 |
-| RobustFace,R50          | MS-Celeb-1M | 99.76 | 98.41 | 97.55 | 95.87  | 93.33 | 96.98 | 91.30 | 94.02 |
-| Sub-center ArcFace,R100 | MS1MV2      | 99.79 | 96.01 | 97.81 | 98.29  | 93.40 | 97.06 | 95.44 | 97.28 |
-| RobustFace,R100         | MS1MV2      | 99.82 | 96.16 | 98.19 | 98.39  | 93.03 | 97.12 | 96.01 | 97.37 |
+| Method(%)               | Train Data  | LFW   | CALFW | AgeDB | CFP-FP | CPLFW | AVG   |
+|-------------------------|-------------|-------|-------|-------|--------|-------|-------|
+| Sub-center ArcFace,R50  | MS-Celeb-1M | 99.32 | 97.77 | 96.39 | 95.51  | 93.37 | 96.47 |
+| RobustFace,R50          | MS-Celeb-1M | 99.76 | 98.41 | 97.55 | 95.87  | 93.33 | 96.98 |
+| Sub-center ArcFace,R100 | MS1MV2      | 99.79 | 96.01 | 97.81 | 98.29  | 93.40 | 97.06 |
+| RobustFace,R100         | MS1MV2      | 99.82 | 96.16 | 98.19 | 98.39  | 93.03 | 97.12 |
 
 
+| Method(%)               | Train Data  | IJBB  | IJBC  |
+|-------------------------|-------------|-------|-------|
+| Sub-center ArcFace,R50  | MS-Celeb-1M | 91.27 | 93.90 |
+| RobustFace,R50          | MS-Celeb-1M | 91.30 | 94.02 |
+| Sub-center ArcFace,R100 | MS1MV2      | 95.44 | 97.28 |
+| RobustFace,R100         | MS1MV2      | 96.01 | 97.37 |
 
+Ablation study on IJBB & IJBC
 
+| Method(%) | Noise Ratio | IJBB    | IJBC    |
+|-----------|:-----------:|---------|---------|
+| m₁        |     0%      | running | running |
+| m₁        |     0%      | running | running |
+| m₁        |     20%     | ...     | ...     |
+| m₁        |     20%     |         |         |
+| m₁        |     20%     |         |         |
+| m₁        |     40%     |         |         |
+| m₁        |     40%     |         |         |
+| m₁        |     40%     |         |         |
 ## Acknowledgements
 
 This code is largely based on [InsightFace](https://github.com/deepinsight/insightface/). We thank the authors a lot for their valuable efforts.
