@@ -82,16 +82,17 @@ In addition to the baseline mentioned in the paper, we conducted more extensive 
 
 Ablation study on IJBB & IJBC
 
-| Method(%) | Noise Ratio | IJBB    | IJBC    |
-|-----------|:-----------:|---------|---------|
-| m₁        |     0%      | running | running |
-| m₁        |     0%      | running | running |
-| m₁        |     20%     | ...     | ...     |
-| m₁        |     20%     |         |         |
-| m₁        |     20%     |         |         |
-| m₁        |     40%     |         |         |
-| m₁        |     40%     |         |         |
-| m₁        |     40%     |         |         |
+| Method(%)   | Noise Ratio | IJBB    | IJBC    |
+|-------------|:-----------:|---------|---------|
+| m₁=0.10     |     0%      | 90.77   | 91.85   |
+| m₁=0.15     |     0%      | running | running |
+| m₁=0.20     |     0%      | ...     | ...     |
+| m₁=0.10     |     20%     |         |         |
+| m₁=0.15     |     20%     |         |         |
+| m₁=0.20     |     20%     |         |         |
+| m₁=0.10     |     40%     |         |         |
+| m₁=0.15     |     40%     |         |         |
+| m₁=0.15     |     40%     |         |         |
 ## Acknowledgements
 
 This code is largely based on [InsightFace](https://github.com/deepinsight/insightface/). We thank the authors a lot for their valuable efforts.
