@@ -62,7 +62,7 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes=1 --node_rank=0 -
 ## Experimental results
 The full experimental results will be presented after publication of the paper.
 
-## Additional remarks
+<!--## Additional remarks
 In addition to the baseline mentioned in the paper, we conducted more extensive experiments and included comparisons with other methods, such as Sub-center ArcFace (ECCV 2020). We will continue to update the experimental results.
 
 | Method(%)               | Train Data  | LFW   | CALFW | AgeDB | CFP-FP | CPLFW | AVG   |
@@ -93,6 +93,7 @@ Ablation study on IJBB & IJBC
 | m₁=0.10     |     40%     |       |       |
 | m₁=0.15     |     40%     |       |       |
 | m₁=0.15     |     40%     |       |       |
+-->
 ## Acknowledgements
 
 This code is largely based on [InsightFace](https://github.com/deepinsight/insightface/). We thank the authors a lot for their valuable efforts.
