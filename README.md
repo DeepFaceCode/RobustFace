@@ -35,6 +35,7 @@ We adopt several large-scale face recognition datasets for training:
 🔹We also provide a high-quality cleaned version of MS-Celeb-1M:
 
 - MS-Celeb-C (77K IDs, 4.9M images)
+- `The cleaned file list (MS-Celeb-C.txt) is available, and the full cleaned dataset is provided as ./MS-Celeb-C.rar in this repository.`
 
 The cleaning is conducted through a automated framework built upon RobustFace, which effectively 
 identifies and removes noisy, mislabeled, and low-quality samples (details provided in the Clean Dataset Framework section).
